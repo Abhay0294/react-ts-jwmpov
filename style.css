@@ -1,0 +1,32 @@
+.header {
+  color: black;
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 3px;
+  padding: 10px;
+  background-image: url('https://i0.wp.com/css-tricks.com/wp-content/uploads/2020/11/css-gradient.png?fit=1200,600&ssl=1');
+}
+
+.header-panel {
+  display: flex;
+  align-content: space-between;
+  justify-content: space-between;
+  border: 1px solid black;
+  border-radius: 3px;
+  padding: 3px;
+  background-image: url('https://digitalsynopsis.com/wp-content/uploads/2017/02/beautiful-color-gradients-backgrounds-013-heavy-rain.png');
+}
+.button {
+  cursor: pointer;
+}
+.button-container {
+  display: flex;
+  width: 100px;
+  justify-content: space-between;
+}
+
+.fa-house-chimney,
+.fa-book,
+.fa-code {
+  cursor: pointer;
+}
