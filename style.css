@@ -30,3 +30,51 @@
 .fa-code {
   cursor: pointer;
 }
+
+.fa-bars:hover {
+  color: red;
+}
+
+.expandable-panel {
+  offset-position: inherit;
+  display: flex;
+  position: fixed;
+  flex-direction: row-reverse;
+  height: auto;
+  width: 10%;
+  border: 1px solid black;
+  border-radius: 3px;
+  background-image: url('https://elementor.com/cdn-cgi/image/f=auto,w=1024,h=576/marketing/wp-content/uploads/sites/9/2021/09/2-radial-color-gradient-example-1024x576.jpg');
+}
+
+.expand-bars {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.techno-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 80px;
+  width: 100%;
+  border: 2px solid black;
+  border-radius: 3px;
+  background-color: #1cd8d2;
+}
+
+.p-language {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 40%;
+  width: 10%;
+  border: 1px solid red;
+  background-color: #ffffff;
+}
+
+.empty-space {
+  height: 80px;
+  width: 100%;
+}
