@@ -9,7 +9,6 @@ export default function ExpandSideBars() {
 
   return (
     <div className="expandable-panel">
-      <C1 />
       <ul>
         <li>LeetCode</li>
         <hr className="hr-line" />
