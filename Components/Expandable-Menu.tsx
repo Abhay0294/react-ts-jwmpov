@@ -2,8 +2,14 @@ import * as React from 'react';
 import '../style';
 
 export default function ExpandSideBars() {
+  /*
+  Here JSX.Element is a return type of React.createElement()
+  */
+  let C1 = (): JSX.Element => <div>test</div>;
+
   return (
     <div className="expandable-panel">
+      <C1 />
       <ul>
         <li>LeetCode</li>
         <hr className="hr-line" />
