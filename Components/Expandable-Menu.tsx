@@ -15,11 +15,6 @@ export default function ExpandSideBars() {
         <li>Geeks4Geeks</li>
         <hr className="hr-line" />
         <li>HackerRank</li>
-        <hr className="hr-line" />
-        <li>HackerEarth</li>
-        <hr className="hr-line" />
-        <li>Codality</li>
-        <hr className="hr-line" />
       </ul>
     </div>
   );
