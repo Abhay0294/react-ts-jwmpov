@@ -39,7 +39,9 @@
 }
 
 .expandable-panel {
-  display: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: fixed;
   height: auto;
   width: auto;
