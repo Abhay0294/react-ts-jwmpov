@@ -25,7 +25,16 @@ export class Welcome extends React.Component {
             </button>
           </div>
           <button onClick={this.changeState}>
-            <i className="fa-solid fa-bars"></i>
+            <i
+              className={`random-class ${
+                this.state.expand === true ? 'random-class-2' : ''
+              }`}
+            ></i>
+            {/* <i
+              className={`fa-solid fa-bars ${
+                this.state.expand === true ? 'fa fa-chevron-down' : ''
+              }`}
+            ></i> */}
           </button>
         </div>
         <div className="expand-bars">
@@ -38,6 +47,7 @@ export class Welcome extends React.Component {
           <div className="p-language">HTML</div>
           <div className="p-language">CSS</div>
         </div>
+        <footer>&copy; Copyright 2022 Abhyansh Technologies</footer>
       </div>
     );
   }
