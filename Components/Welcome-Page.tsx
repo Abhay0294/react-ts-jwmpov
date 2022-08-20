@@ -2,6 +2,7 @@ import * as React from 'react';
 import '../style';
 import '@fortawesome/fontawesome-free/js/all.js';
 import ExpandSideBars from './Expandable-Menu';
+import CollapsablePanel from '../Components/Collapsable';
 
 export class Welcome extends React.Component {
   state = {
@@ -24,10 +25,10 @@ export class Welcome extends React.Component {
               <i className="fa-solid fa-book" title="Documentation"></i>
             </button>
           </div>
-          <button onClick={this.changeState}>
+          <button onClick={this.toggleSatate}>
             <i
-              className={`random-class ${
-                this.state.expand === true ? 'random-class-2' : ''
+              className={`random-class${
+                this.state.expand === true ? '-expand' : '-collapse'
               }`}
             ></i>
             {/* <i
@@ -48,11 +49,12 @@ export class Welcome extends React.Component {
           <div className="p-language">CSS</div>
         </div>
         <footer>&copy; Copyright 2022 Abhyansh Technologies</footer>
+        <button>Expand/Collapse{<CollapsablePanel />}</button>
       </div>
     );
   }
 
-  changeState = () => {
+  toggleSatate = () => {
     if (this.state.expand) {
       this.setState({
         expand: false,

@@ -39,15 +39,15 @@
 }
 
 .expandable-panel {
-  offset-position: inherit;
-  display: flex;
+  display: fit-content;
   position: fixed;
-  flex-direction: row-reverse;
   height: auto;
-  width: 10%;
+  width: auto;
   border: 1px solid black;
   border-radius: 3px;
   background-image: url('https://elementor.com/cdn-cgi/image/f=auto,w=1024,h=576/marketing/wp-content/uploads/sites/9/2021/09/2-radial-color-gradient-example-1024x576.jpg');
+  overflow: hidden;
+  transition: 1000ms transform 1ms;
 }
 
 .expand-bars {
@@ -85,7 +85,7 @@
   line-height: 12px;
   cursor: pointer;
   box-shadow: 10px 10px 10px 0px;
-  transition: background-color 400ms ease-out 2ms;
+  transition: background-color 500ms ease-out 2ms;
 }
 
 .p-language:hover {
@@ -97,12 +97,12 @@
   width: 100%;
 }
 
-.random-class {
+.random-class-collapse {
   content: url('./icons/down_arrow.svg');
   transition: 500ms linear 1ms;
 }
 
-.random-class-2 {
-  content: url('./icons/up-arrow.svg');
-  transform: rotate(360deg);
+.random-class-expand {
+  content: url('./icons/up_arrow.svg');
+  transform: rotate(180deg);
 }
