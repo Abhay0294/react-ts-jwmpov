@@ -47,9 +47,8 @@
   border-radius: 3px;
   background-image: url('https://elementor.com/cdn-cgi/image/f=auto,w=1024,h=576/marketing/wp-content/uploads/sites/9/2021/09/2-radial-color-gradient-example-1024x576.jpg');
   overflow: hidden;
-  transition: 1000ms transform 1ms;
+  transition: 1000ms linear 1ms;
 }
-
 .expand-bars {
   display: flex;
   justify-content: flex-end;
@@ -103,6 +102,6 @@
 }
 
 .random-class-expand {
-  content: url('./icons/up_arrow.svg');
+  content: url('./icons/up-arrow.svg');
   transform: rotate(180deg);
 }

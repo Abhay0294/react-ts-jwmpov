@@ -27,8 +27,8 @@ export class Welcome extends React.Component {
           </div>
           <button onClick={this.toggleSatate}>
             <i
-              className={`random-class${
-                this.state.expand === true ? '-expand' : '-collapse'
+              className={`random-class-collapse ${
+                this.state.expand === true ? 'random-class-expand' : ''
               }`}
             ></i>
             {/* <i
@@ -49,7 +49,6 @@ export class Welcome extends React.Component {
           <div className="p-language">CSS</div>
         </div>
         <footer>&copy; Copyright 2022 Abhyansh Technologies</footer>
-        <button>Expand/Collapse{<CollapsablePanel />}</button>
       </div>
     );
   }
