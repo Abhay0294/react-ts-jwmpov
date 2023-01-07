@@ -1,3 +1,3 @@
-# react-ts-jwmpov
+# React Project
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/react-ts-jwmpov)
+This project hold the code for Namaste React
